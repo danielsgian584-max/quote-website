@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy My Quote</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#111,#222,#000);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    max-width:700px;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(255,255,255,.08);
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.quote{
+    font-size:28px;
+    font-style:italic;
+    margin:35px 0;
+    line-height:1.5;
+}
+
+.author{
+    color:#bdbdbd;
+    font-size:18px;
+}
+
+.price{
+    font-size:36px;
+    color:#00ff88;
+    margin:30px 0;
+    font-weight:bold;
+}
+
+button{
+    background:#00c853;
+    color:white;
+    border:none;
+    padding:18px 45px;
+    font-size:22px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    background:#00e676;
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:25px;
+    color:#888;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<h1>Buy My Quote</h1>
+
+<div class="quote">
+“Don't go back with your friend because reading the same book twice won't change its ending.”
+</div>
+
+<div class="author">
+© Giant
+</div>
+
+<div class="price">
+$5
+</div>
+
+<button onclick="buyQuote()">
+Buy Now
+</button>
+
+<div class="footer">
+This quote is © Giant. All rights reserved.
+</div>
+
+</div>
+
+<script>
+function buyQuote(){
+    alert("Thank you for your interest! Connect this button to Stripe or PayPal to accept the $5 payment.");
+}
+</script>
+
+</body>
+</html>
